@@ -1,6 +1,1 @@
-nuxt
-nuxtjs
-vue
-vueuse
-pinia
-oklch
+ecomunidade

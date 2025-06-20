@@ -21,8 +21,8 @@
 
 :root {
     /* Brand ----------------------------------------- */
-    --theme-primary: oklch(0.623 0.214 259.815);
-    --theme-primary-alt: oklch(0.707 0.165 254.624);
+    --theme-primary: oklch(72.3% 0.219 149.579);
+    --theme-primary-alt: oklch(79.2% 0.209 151.711);
 
     /* Neutral ---------------------------------------- */
     --theme-base: oklch(0.97 0 0);
@@ -40,8 +40,8 @@
 
 .dark-mode {
     /* Brand ----------------------------------------- */
-    --theme-primary: oklch(0.707 0.165 254.624);
-    --theme-primary-alt: oklch(0.623 0.214 259.815);
+    --theme-primary: oklch(79.2% 0.209 151.711);
+    --theme-primary-alt: oklch(72.3% 0.219 149.579);
 
     /* Neutral ---------------------------------------- */
     --theme-base: oklch(0.269 0 0);

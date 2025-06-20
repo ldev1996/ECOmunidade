@@ -9,7 +9,7 @@
                 id="confetti-btn"
                 class="bg-primary hover:bg-primary-alt p-2 rounded cursor-pointer transition-colors"
             >
-                Let's Party!
+                Hora da Festa!
             </button>
         </div>
     </div>

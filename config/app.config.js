@@ -1,17 +1,17 @@
 export default {
-    appName: 'Nuxt Rocket',
+    appName: 'ECOmunidade',
     themes: [
         {
             value: 'system',
-            label: 'System',
+            label: 'Sistema',
         },
         {
             value: 'light',
-            label: 'Light',
+            label: 'Claro',
         },
         {
             value: 'dark',
-            label: 'Dark',
+            label: 'Escuro',
         },
     ],
 }
