@@ -1,0 +1,6 @@
+nuxt
+nuxtjs
+vue
+vueuse
+pinia
+oklch
