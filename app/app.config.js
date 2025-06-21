@@ -1,4 +1,4 @@
-export default {
+export default defineAppConfig({
     appName: 'ECOmunidade',
     themes: [
         {
@@ -14,4 +14,4 @@ export default {
             label: 'Escuro',
         },
     ],
-}
+})

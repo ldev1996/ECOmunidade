@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="js">
-    const appConfig = useNuxtApp().$appConfig
+    const appConfig = useAppConfig()
 
     useHead({
         titleTemplate: (titleChunk) => {

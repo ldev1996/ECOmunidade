@@ -18,5 +18,5 @@
 
 <script setup lang="js">
     const colorMode = useColorMode()
-    const appConfig = useNuxtApp().$appConfig
+    const appConfig = useAppConfig()
 </script>
