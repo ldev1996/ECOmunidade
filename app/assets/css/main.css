@@ -4,6 +4,8 @@
     /* Brand ----------------------------------------- */
     --color-primary: var(--theme-primary);
     --color-primary-alt: var(--theme-primary-alt);
+    --color-secondary: var(--theme-secondary);
+    --color-secondary-alt: var(--theme-secondary-alt);
 
     /* Neutral ---------------------------------------- */
     --color-base: var(--theme-base);
@@ -25,13 +27,15 @@
     /* Brand ----------------------------------------- */
     --theme-primary: oklch(72.3% 0.219 149.579);
     --theme-primary-alt: oklch(79.2% 0.209 151.711);
+    --theme-secondary: oklch(68.5% 0.169 237.323);
+    --theme-secondary-alt: oklch(74.6% 0.16 232.661);
 
     /* Neutral --------------------------------------- */
-    --theme-base: oklch(85% 0 0);
-    --theme-surface: oklch(90% 0 0);
-    --theme-highlight: oklch(95% 0 0);
+    --theme-base: oklch(92.8% 0.006 264.531);
+    --theme-surface: oklch(96.7% 0.003 264.542);
+    --theme-highlight: oklch(98.5% 0.002 247.839);
     --theme-foreground: oklch(5% 0 0);
-    --theme-foreground-muted: oklch(30% 0 0);
+    --theme-foreground-muted: oklch(44.6% 0.03 256.802);
 
     /* Semantic -------------------------------------- */
     --theme-success: oklch(0.723 0.219 149.579);
@@ -46,13 +50,15 @@
     /* Brand ----------------------------------------- */
     --theme-primary: oklch(79.2% 0.209 151.711);
     --theme-primary-alt: oklch(72.3% 0.219 149.579);
+    --theme-secondary: oklch(74.6% 0.16 232.661);
+    --theme-secondary-alt: oklch(68.5% 0.169 237.323);
 
     /* Neutral --------------------------------------- */
-    --theme-base: oklch(15% 0 0);
-    --theme-surface: oklch(20% 0 0);
-    --theme-highlight: oklch(25% 0 0);
+    --theme-base: oklch(13% 0.028 261.692);
+    --theme-surface: oklch(21% 0.034 264.665);
+    --theme-highlight: oklch(27.8% 0.033 256.848);
     --theme-foreground: oklch(95% 0 0);
-    --theme-foreground-muted: oklch(70% 0 0);
+    --theme-foreground-muted: oklch(55.1% 0.027 264.364);
 
     /* Semantic -------------------------------------- */
     --theme-success: oklch(0.792 0.209 151.711);
