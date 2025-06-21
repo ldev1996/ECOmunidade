@@ -10,6 +10,7 @@
         "postinstall": "nuxt prepare"
     },
     "dependencies": {
+        "@nuxt/icon": "^1.14.0",
         "@nuxtjs/color-mode": "^3.5.2",
         "@pinia/nuxt": "^0.11.1",
         "@tailwindcss/vite": "^4.1.10",
@@ -19,5 +20,8 @@
         "vue": "^3.5.16",
         "vue-rewards": "^1.0.3",
         "vue-router": "^4.5.1"
+    },
+    "devDependencies": {
+        "@iconify-json/lucide": "^1.2.51"
     }
 }
