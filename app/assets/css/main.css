@@ -8,9 +8,11 @@
     /* Neutral ---------------------------------------- */
     --color-base: var(--theme-base);
     --color-surface: var(--theme-surface);
+    --color-highlight: var(--theme-highlight);
     --color-foreground: var(--theme-foreground);
+    --color-foreground-muted: var(--theme-foreground-muted);
 
-    /* Feedback -------------------------------------- */
+    /* Semantic -------------------------------------- */
     --color-success: var(--theme-success);
     --color-success-alt: var(--theme-success-alt);
     --color-warning: var(--theme-warning);
@@ -24,12 +26,14 @@
     --theme-primary: oklch(72.3% 0.219 149.579);
     --theme-primary-alt: oklch(79.2% 0.209 151.711);
 
-    /* Neutral ---------------------------------------- */
-    --theme-base: oklch(0.97 0 0);
-    --theme-surface: oklch(0.922 0 0);
-    --theme-foreground: oklch(0.269 0 0);
+    /* Neutral --------------------------------------- */
+    --theme-base: oklch(85% 0 0);
+    --theme-surface: oklch(90% 0 0);
+    --theme-highlight: oklch(95% 0 0);
+    --theme-foreground: oklch(5% 0 0);
+    --theme-foreground-muted: oklch(30% 0 0);
 
-    /* Feedback -------------------------------------- */
+    /* Semantic -------------------------------------- */
     --theme-success: oklch(0.723 0.219 149.579);
     --theme-success-alt: oklch(0.792 0.209 151.711);
     --theme-warning: oklch(0.795 0.184 86.047);
@@ -43,12 +47,14 @@
     --theme-primary: oklch(79.2% 0.209 151.711);
     --theme-primary-alt: oklch(72.3% 0.219 149.579);
 
-    /* Neutral ---------------------------------------- */
-    --theme-base: oklch(0.269 0 0);
-    --theme-surface: oklch(0.371 0 0);
-    --theme-foreground: oklch(0.97 0 0);
+    /* Neutral --------------------------------------- */
+    --theme-base: oklch(15% 0 0);
+    --theme-surface: oklch(20% 0 0);
+    --theme-highlight: oklch(25% 0 0);
+    --theme-foreground: oklch(95% 0 0);
+    --theme-foreground-muted: oklch(70% 0 0);
 
-    /* Feedback -------------------------------------- */
+    /* Semantic -------------------------------------- */
     --theme-success: oklch(0.792 0.209 151.711);
     --theme-success-alt: oklch(0.723 0.219 149.579);
     --theme-warning: oklch(0.852 0.199 91.936);
