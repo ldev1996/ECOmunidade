@@ -1,4 +1,7 @@
 @import 'tailwindcss';
+@import './color-modes.css';
+@import './layers/base.css';
+@import './layers/components.css';
 
 @theme inline {
     /* Brand ----------------------------------------- */
@@ -24,106 +27,4 @@
     --color-danger-alt: var(--theme-danger-alt);
 }
 
-:root {
-    /* Brand ----------------------------------------- */
-    --theme-primary: oklch(72.3% 0.219 149.579);
-    --theme-primary-alt: oklch(79.2% 0.209 151.711);
-    --theme-secondary: oklch(68.5% 0.169 237.323);
-    --theme-secondary-alt: oklch(74.6% 0.16 232.661);
-
-    /* Neutral --------------------------------------- */
-    --theme-base: oklch(92.8% 0.006 264.531);
-    --theme-surface: oklch(96.7% 0.003 264.542);
-    --theme-highlight: oklch(98.5% 0.002 247.839);
-    --theme-foreground: oklch(5% 0 0);
-    --theme-foreground-invert: oklch(95% 0 0);
-    --theme-foreground-muted: oklch(44.6% 0.03 256.802);
-
-    /* Semantic -------------------------------------- */
-    --theme-success: oklch(0.723 0.219 149.579);
-    --theme-success-alt: oklch(0.792 0.209 151.711);
-    --theme-warning: oklch(0.795 0.184 86.047);
-    --theme-warning-alt: oklch(0.852 0.199 91.936);
-    --theme-danger: oklch(0.637 0.237 25.331);
-    --theme-danger-alt: oklch(0.704 0.191 22.216);
-}
-
-.dark-mode {
-    /* Brand ----------------------------------------- */
-    --theme-primary: oklch(79.2% 0.209 151.711);
-    --theme-primary-alt: oklch(72.3% 0.219 149.579);
-    --theme-secondary: oklch(74.6% 0.16 232.661);
-    --theme-secondary-alt: oklch(68.5% 0.169 237.323);
-
-    /* Neutral --------------------------------------- */
-    --theme-base: oklch(13% 0.028 261.692);
-    --theme-surface: oklch(21% 0.034 264.665);
-    --theme-highlight: oklch(27.8% 0.033 256.848);
-    --theme-foreground: oklch(95% 0 0);
-    --theme-foreground-invert: oklch(5% 0 0);
-    --theme-foreground-muted: oklch(55.1% 0.027 264.364);
-
-    /* Semantic -------------------------------------- */
-    --theme-success: oklch(0.792 0.209 151.711);
-    --theme-success-alt: oklch(0.723 0.219 149.579);
-    --theme-warning: oklch(0.852 0.199 91.936);
-    --theme-warning-alt: oklch(0.795 0.184 86.047);
-    --theme-danger: oklch(0.704 0.191 22.216);
-    --theme-danger-alt: oklch(0.637 0.237 25.331);
-}
-
 @custom-variant dark (&:where(.dark-mode, .dark-mode *));
-
-@layer base {
-    p,
-    label {
-        color: var(--color-foreground);
-    }
-
-    a,
-    button {
-        cursor: pointer;
-    }
-}
-
-@layer components {
-    .btn-1 {
-        background-color: var(--color-primary);
-        color: var(--color-foreground-invert);
-        padding: calc(var(--spacing) * 3) calc(var(--spacing) * 5);
-        border-radius: var(--radius-lg);
-        font-size: var(--text-md);
-        border: calc(var(--spacing) * 0.5) solid transparent;
-        font-weight: bold;
-    }
-
-    .btn-1:hover {
-        background-color: var(--color-primary-alt);
-    }
-
-    .btn-2 {
-        background-color: var(--color-highlight);
-        color: var(--color-primary);
-        padding: calc(var(--spacing) * 3) calc(var(--spacing) * 5);
-        border-radius: var(--radius-lg);
-        font-size: var(--text-md);
-        border: calc(var(--spacing) * 0.5) solid transparent;
-        font-weight: bold;
-    }
-
-    .btn-2:hover {
-        background-color: var(--color-base);
-    }
-
-    .btn-3 {
-        background-color: transparent;
-        color: var(--color-highlight);
-        padding: calc(var(--spacing) * 3) calc(var(--spacing) * 5);
-        border-radius: var(--radius-lg);
-        font-size: var(--text-md);
-        border: calc(var(--spacing) * 0.5) solid var(--color-highlight);
-        font-weight: bold;
-
-        @apply hover:bg-base/20;
-    }
-}

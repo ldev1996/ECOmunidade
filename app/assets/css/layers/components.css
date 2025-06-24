@@ -1,0 +1,46 @@
+@layer components {
+    .btn-1 {
+        background-color: var(--color-primary);
+        color: var(--color-foreground-invert);
+        padding: --spacing(4) --spacing(5);
+        border-radius: var(--radius-lg);
+        font-size: var(--text-md);
+        border: --spacing(0.5) solid transparent;
+        font-weight: bold;
+        transition-property: color;
+    }
+
+    .btn-1:hover {
+        background-color: var(--color-primary-alt);
+    }
+
+    .btn-2 {
+        background-color: var(--color-highlight);
+        color: var(--color-primary);
+        padding: --spacing(4) --spacing(5);
+        border-radius: var(--radius-lg);
+        font-size: var(--text-md);
+        border: --spacing(0.5) solid transparent;
+        font-weight: bold;
+        transition-property: color;
+    }
+
+    .btn-2:hover {
+        background-color: var(--color-surface);
+    }
+
+    .btn-3 {
+        background-color: transparent;
+        color: var(--color-highlight);
+        padding: --spacing(4) --spacing(5);
+        border-radius: var(--radius-lg);
+        font-size: var(--text-md);
+        border: --spacing(0.5) solid var(--color-highlight);
+        font-weight: bold;
+        transition-property: color;
+    }
+
+    .btn-3:hover {
+        background-color: --alpha(var(--color-base) / 20%);
+    }
+}

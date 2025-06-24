@@ -1,0 +1,11 @@
+@layer base {
+    p,
+    label {
+        color: var(--color-foreground);
+    }
+
+    a,
+    button {
+        cursor: pointer;
+    }
+}
