@@ -1,5 +1,5 @@
 <template>
-    <label class="flex items-center gap-2 text-sm text-foreground">
+    <label class="flex items-center gap-2 text-sm">
         Tema
         <select
             v-model="colorMode.preference"
