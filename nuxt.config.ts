@@ -5,6 +5,12 @@ export default defineNuxtConfig({
     future: {
         compatibilityVersion: 4,
     },
+    ssr: false,
+    routeRules: {
+        '/': {
+            ssr: true,
+        },
+    },
     devtools: { enabled: true },
     pages: { pattern: ['**/*.vue', '!**/components/**'] },
     components: [
