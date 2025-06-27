@@ -2,6 +2,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-05-15',
+    future: {
+        compatibilityVersion: 4,
+    },
     devtools: { enabled: true },
     pages: { pattern: ['**/*.vue', '!**/components/**'] },
     components: [
@@ -17,7 +20,6 @@ export default defineNuxtConfig({
     ],
     css: ['~/assets/css/main.css'],
     vite: { plugins: [tailwindcss()] },
-    srcDir: 'app',
     modules: ['@nuxtjs/color-mode', '@nuxt/icon'],
     colorMode: {
         preference: 'system', // default value of $colorMode.preference
