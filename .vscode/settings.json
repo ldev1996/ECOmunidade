@@ -1,0 +1,12 @@
+{
+    "cSpell.customDictionaries": {
+        "project": {
+            "name": "project",
+            "path": "./.vscode/words.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    },
+    "cSpell.allowCompoundWords": true,
+    "cSpell.words": ["nuxt", "nuxtjs", "vueuse", "unocss", "iconify", "xmark"]
+}

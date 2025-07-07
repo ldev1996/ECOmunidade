@@ -1,0 +1,44 @@
+/*
+🎨 Nuxt Rocket Theme System
+
+Customize your design system by:
+- Editing only the base variables (brand, neutral, semantic).
+- Letting derived values auto-generate from them.
+
+To add new themes:
+- Register them in app.config.js under "themes".
+- Define their styles in this file using the matching class name.
+
+⚠️ Avoid removing the default themes (light, dark, auto), you can only edit them.
+*/
+
+:root {
+    /* Brand ----------------------------------------- */
+    --color-primary: oklch(70.7% 0.165 254.624);
+    --color-secondary: oklch(78.9% 0.154 211.53);
+
+    /* Neutral --------------------------------------- */
+    --color-base: oklch(92% 0.006 264);
+    --color-foreground: oklch(5% 0 0);
+    --color-foreground-muted: oklch(40% 0 0);
+
+    /* Semantic -------------------------------------- */
+    --color-success: oklch(79.2% 0.209 151.7);
+    --color-warning: oklch(85.2% 0.199 91.9);
+    --color-danger: oklch(70.4% 0.191 22.2);
+
+    /* Derived Shades -------------------------------- */
+    --color-primary-alt: oklch(from var(--color-primary) calc(l + 0.1) c h);
+    --color-secondary-alt: oklch(from var(--color-secondary) calc(l + 0.1) c h);
+    --color-surface: oklch(from var(--color-base) calc(l + 0.04) c h);
+    --color-highlight: oklch(from var(--color-base) calc(l + 0.08) c h);
+    --color-success-alt: oklch(from var(--color-success) calc(l + 0.08) c h);
+    --color-warning-alt: oklch(from var(--color-warning) calc(l + 0.08) c h);
+    --color-danger-alt: oklch(from var(--color-danger) calc(l + 0.08) c h);
+}
+
+.dark {
+    --color-base: oklch(20.9% 0.01 260);
+    --color-foreground: oklch(95% 0 0);
+    --color-foreground-muted: oklch(60% 0 0);
+}
