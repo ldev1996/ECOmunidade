@@ -7,6 +7,7 @@
             "scope": "workspace"
         }
     },
+    "cSpell.language": "en,pt,pt_BR",
     "cSpell.allowCompoundWords": true,
     "cSpell.words": ["nuxt", "nuxtjs", "vueuse", "unocss", "iconify", "xmark"]
 }

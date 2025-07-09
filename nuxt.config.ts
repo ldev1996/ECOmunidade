@@ -4,6 +4,10 @@ export default defineNuxtConfig({
     future: {
         compatibilityVersion: 4,
     },
+    site: {
+        name: 'ECOmunidade',
+        defaultLocale: 'pt-BR'
+    },
     pages: { pattern: ['**/*.vue', '!**/components/**'] },
     components: [
         {
