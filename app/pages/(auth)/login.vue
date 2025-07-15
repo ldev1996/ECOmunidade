@@ -1,6 +1,6 @@
 <template>
     <div
-        class="bg-surface px-2 py-5 min-w-100 max-w-90vw rounded-md border-(highlight 1)"
+        class="bg-surface px-2 py-5 w-100 max-w-90vw rounded-md border-(highlight 1)"
     >
         <form>
             <div>
@@ -9,24 +9,51 @@
                     type="email"
                     name="email"
                     id="email"
+                    placeholder="O e-mail usado no cadastro"
+                    required
                 />
             </div>
             <div>
                 <label for="password">Senha</label>
-                <input
-                    type="password"
-                    name="password"
-                    id="password"
-                />
+                <div class="relative">
+                    <input
+                        :type="showPassword ? 'text' : 'password'"
+                        name="password"
+                        id="password"
+                        placeholder="Digite sua senha"
+                        required
+                    />
+                    <button
+                        type="button"
+                        :class="
+                            showPassword
+                                ? 'i-lucide:eye'
+                                : 'i-lucide:eye-closed'
+                        "
+                        class="absolute right-2 top-1/2 -translate-y-1/2"
+                        @click="showPassword = !showPassword"
+                    />
+                </div>
             </div>
             <div class="mt-5">
-                <button type="submit">Fazer Login</button>
+                <button
+                    type="submit"
+                    @click.prevent="handleLogin()"
+                >
+                    Fazer Login
+                </button>
             </div>
         </form>
     </div>
 </template>
 
-<script setup lang="js"></script>
+<script setup lang="js">
+    const showPassword = ref(false)
+
+    const handleLogin = () => {
+        console.log('login')
+    }
+</script>
 
 <style scoped>
     form {
