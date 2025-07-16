@@ -6,7 +6,12 @@ export default defineNuxtConfig({
     },
     site: {
         name: 'ECOmunidade',
-        defaultLocale: 'pt-BR'
+        defaultLocale: 'pt-BR',
+    },
+    supabase: {
+        redirect: false,
+        url: process.env.SUPABASE_URL,
+        key: process.env.SUPABASE_ANON_KEY,
     },
     pages: { pattern: ['**/*.vue', '!**/components/**'] },
     components: [
@@ -21,5 +26,11 @@ export default defineNuxtConfig({
         },
     ],
     css: ['~/assets/css/theme.css'],
-    modules: ['@pinia/nuxt', '@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/seo'],
-})
+    modules: [
+        '@pinia/nuxt',
+        '@vueuse/nuxt',
+        '@unocss/nuxt',
+        '@nuxtjs/seo',
+        '@nuxtjs/supabase',
+    ],
+});
