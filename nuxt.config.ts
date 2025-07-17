@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     supabase: {
         redirect: false,
         url: process.env.SUPABASE_URL,
-        key: process.env.SUPABASE_ANON_KEY,
+        key: process.env.SUPABASE_PUBLISHABLE_KEY,
     },
     pages: { pattern: ['**/*.vue', '!**/components/**'] },
     components: [
