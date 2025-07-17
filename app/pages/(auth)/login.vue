@@ -6,6 +6,7 @@
             <div>
                 <label for="email">E-mail</label>
                 <input
+                    v-model="form.email"
                     type="email"
                     name="email"
                     id="email"
@@ -17,6 +18,7 @@
                 <label for="password">Senha</label>
                 <div class="relative">
                     <input
+                        v-model="form.password"
                         :type="showPassword ? 'text' : 'password'"
                         name="password"
                         id="password"
@@ -48,10 +50,24 @@
 </template>
 
 <script setup lang="js">
+    const { loginWithPassword } = useAuth()
     const showPassword = ref(false)
 
-    const handleLogin = () => {
-        console.log('login')
+    const form = ref({
+        email: '',
+        password: ''
+    })
+
+    const handleLogin = async () => {
+        try {
+            console.log("[Login Page] Logging in...")
+            await loginWithPassword({
+                email: form.value.email,
+                password: form.value.password
+            })
+        } catch(error) {
+            console.error("[Login Page] Error logging in", error)
+        }
     }
 </script>
 
