@@ -32,6 +32,11 @@
             icon: 'i-lucide-home'
         },
         {
+            page: '/item/new',
+            label: 'Criar Oferta',
+            icon: 'i-lucide-circle-plus'
+        },
+        {
             page: '/profile/me',
             label: 'Meu Perfil',
             icon: 'i-lucide-circle-user-round'

@@ -3,7 +3,7 @@
         v-if="store.me"
         class="w-full flex flex-col items-center justify-center"
     >
-        <section class="flex gap-2 px-4 py-3">
+        <section class="flex gap-2">
             <Skeleton
                 w="5rem"
                 h="5rem"
@@ -26,6 +26,6 @@
 
 <style scoped>
     section {
-        --at-apply: 'bg-surface border-(1 highlight) rounded-xl w-full mb-10';
+        --at-apply: 'px-4 py-3 bg-surface border-(1 highlight) rounded-xl w-full mb-10';
     }
 </style>

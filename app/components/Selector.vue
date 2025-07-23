@@ -36,7 +36,7 @@
         --vs-text-color: var(--color-foreground);
         --vs-line-height: 1.5;
         --vs-placeholder-color: var(--color-foreground-muted);
-        --vs-background-color: var(--color-surface);
+        --vs-background-color: var(--color-highlight);
         --vs-disabled-background-color: var(--color-base);
         --vs-outline-width: 1px;
         --vs-outline-color: var(--color-primary);
@@ -44,7 +44,7 @@
         --vs-menu-offset-top: 8px;
         --vs-menu-height: 200px;
         --vs-menu-border: var(--vs-border);
-        --vs-menu-background-color: var(--vs-background-color);
+        --vs-menu-background-color: var(--color-surface);
         --vs-menu-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
         --vs-menu-z-index: 2;
 
