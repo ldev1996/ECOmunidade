@@ -36,7 +36,7 @@
                 <NuxtLink
                     v-for="community in store.me.communities"
                     :key="community.name"
-                    :to="`/community/${community.slug})`"
+                    :to="`/community/${community.slug}`"
                     class="px-2 py-1 bg-primary hover:bg-primary-alt rounded-md text-(md foreground)"
                 >
                     {{ community.name }}
