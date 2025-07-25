@@ -1,4 +1,5 @@
 <template>
+    <h1 class="text-(3xl foreground) self-baseline mb-5">Criar Oferta</h1>
     <form
         method="post"
         class="bg-surface border-(1 highlight) rounded-xl px-4 py-3"
@@ -44,11 +45,12 @@
                 <label for="amount">Quantidade</label>
                 <input
                     v-model="form.amount"
-                    type="number" name="amount"
+                    type="number"
+                    name="amount"
                     placeholder="Informe a quantidade"
                     required
                     min="1"
-                >
+                />
             </div>
             <div class="w-48%">
                 <label for="amount_type">Unidade de medida</label>
@@ -57,11 +59,14 @@
                     placeholder="Em qual unidade está a quantidade?"
                     required
                     :options="amountTypeOptions"
-                />                
+                />
             </div>
         </div>
         <div class="mt-5">
-            <button type="submit" @click.prevent="handleCreate()">
+            <button
+                type="submit"
+                @click.prevent="handleCreate()"
+            >
                 Publicar oferta
             </button>
         </div>
