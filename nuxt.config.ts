@@ -1,9 +1,6 @@
 export default defineNuxtConfig({
     compatibilityDate: '2025-05-15',
     devtools: { enabled: true },
-    future: {
-        compatibilityVersion: 4,
-    },
     site: {
         name: 'ECOmunidade',
         defaultLocale: 'pt-BR',
@@ -33,4 +30,4 @@ export default defineNuxtConfig({
         '@nuxtjs/seo',
         '@nuxtjs/supabase',
     ],
-});
+})
