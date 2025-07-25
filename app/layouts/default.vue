@@ -1,22 +1,27 @@
 <template>
     <div class="w-full h-dvh bg-base grid grid-cols-5">
         <aside
-            class="bg-surface col-(start-1 end-2) h-full flex flex-col px-3 py-2"
+            class="bg-surface col-(start-1 end-2) h-full flex flex-col px-3 py-2 justify-between"
         >
-            <Logo />
-            <nav class="mt-5 w-full">
-                <NuxtLink
-                    v-for="page in pages"
-                    :to="page.page"
-                    class="page-link flex items-center gap-2"
-                >
-                    <div
-                        class="size-5"
-                        :class="page.icon"
-                    />
-                    {{ page.label }}
-                </NuxtLink>
-            </nav>
+            <div>
+                <Logo />
+                <nav class="mt-5 w-full">
+                    <NuxtLink
+                        v-for="page in pages"
+                        :to="page.page"
+                        class="page-link flex items-center gap-2"
+                    >
+                        <div
+                            class="size-5"
+                            :class="page.icon"
+                        />
+                        {{ page.label }}
+                    </NuxtLink>
+                </nav>
+            </div>
+            <div>
+                <ThemeSwitch />
+            </div>
         </aside>
         <div class="col-(start-2 end-6) h-full px-10 pt-10">
             <slot />

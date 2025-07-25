@@ -1,6 +1,6 @@
 <template>
     <label class="flex items-center gap-2 text-sm text-foreground">
-        Theme
+        Tema
         <select
             class="bg-highlight rounded-lg py-1 px-2 cursor-pointer text-foreground"
             v-model="mode"
@@ -17,6 +17,10 @@
 </template>
 
 <script setup lang="js">
-    const themes = useAppConfig().themes
+    const themes = {
+        Auto: 'auto',
+        Claro: 'light',
+        Escuro: 'dark',
+    }
     const mode = useColorMode({ modes: themes, initialValue: 'Auto' })
 </script>

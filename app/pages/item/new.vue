@@ -122,9 +122,13 @@
         }
     }
 
+    label {
+        --at-apply: 'text-foreground';
+    }
+
     input,
     textarea {
-        --at-apply: 'w-full bg-highlight rounded-sm px-2 py-1 focus:outline-(2 primary)';
+        --at-apply: 'w-full bg-highlight rounded-sm px-2 py-1 focus:outline-(2 primary) text-foreground placeholder:text-foreground-muted';
     }
 
     button {

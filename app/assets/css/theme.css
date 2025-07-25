@@ -16,17 +16,17 @@ To add new themes:
     /* Brand ----------------------------------------- */
     --color-primary: oklch(79.2% 0.209 151.711);
     --color-secondary: oklch(82.8% 0.111 230.318);
-    
+
     /* Neutral --------------------------------------- */
     --color-base: oklch(92% 0.006 264);
     --color-foreground: oklch(5% 0 0);
     --color-foreground-muted: oklch(40% 0 0);
-    
+
     /* Semantic -------------------------------------- */
     --color-success: oklch(79.2% 0.209 151.7);
     --color-warning: oklch(85.2% 0.199 91.9);
     --color-danger: oklch(70.4% 0.191 22.2);
-    
+
     /* Derived Shades -------------------------------- */
     --color-primary-alt: oklch(from var(--color-primary) calc(l + 0.1) c h);
     --color-secondary-alt: oklch(from var(--color-secondary) calc(l + 0.1) c h);
